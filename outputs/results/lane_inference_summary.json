@@ -1,0 +1,20 @@
+{
+  "solved": 165,
+  "total": 204,
+  "median_carriageway_m": 5.269798031844253,
+  "mean_lane_count": 1.6848484848484848,
+  "lane_hist": {
+    "1": 73,
+    "2": 75,
+    "3": 14,
+    "4": 2,
+    "5": 1
+  },
+  "road_type": {
+    "unstructured": 141,
+    "structured": 24
+  },
+  "ego_assigned": 148,
+  "mean_confidence": 0.7454574511230267,
+  "median_lane_width_m": 3.4106583072100314
+}

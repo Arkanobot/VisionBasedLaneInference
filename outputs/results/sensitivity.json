@@ -1,0 +1,79 @@
+[
+  {
+    "camera_height_m": 1.3,
+    "solved": 146,
+    "frames": 204,
+    "median_carriageway_m": 4.6744912176165005,
+    "median_lane_width_m": 3.410658307210031,
+    "mean_lane_count": 1.582191780821918,
+    "lane_count_hist": {
+      "1": 85,
+      "2": 48,
+      "3": 7,
+      "4": 4,
+      "5": 1,
+      "8": 1
+    }
+  },
+  {
+    "camera_height_m": 1.5,
+    "solved": 156,
+    "frames": 204,
+    "median_carriageway_m": 4.966080125047139,
+    "median_lane_width_m": 3.4919480830003975,
+    "mean_lane_count": 1.5961538461538463,
+    "lane_count_hist": {
+      "1": 80,
+      "2": 64,
+      "3": 9,
+      "4": 2,
+      "6": 1
+    }
+  },
+  {
+    "camera_height_m": 1.75,
+    "solved": 165,
+    "frames": 204,
+    "median_carriageway_m": 5.269798031844253,
+    "median_lane_width_m": 3.4106583072100314,
+    "mean_lane_count": 1.6848484848484848,
+    "lane_count_hist": {
+      "1": 73,
+      "2": 75,
+      "3": 14,
+      "4": 2,
+      "5": 1
+    }
+  },
+  {
+    "camera_height_m": 2.0,
+    "solved": 171,
+    "frames": 204,
+    "median_carriageway_m": 5.89655711635775,
+    "median_lane_width_m": 3.5136838275638027,
+    "mean_lane_count": 1.8596491228070176,
+    "lane_count_hist": {
+      "1": 58,
+      "2": 90,
+      "3": 18,
+      "4": 3,
+      "6": 1,
+      "8": 1
+    }
+  },
+  {
+    "camera_height_m": 2.4,
+    "solved": 166,
+    "frames": 204,
+    "median_carriageway_m": 6.984938032772465,
+    "median_lane_width_m": 3.5380387054455973,
+    "mean_lane_count": 2.0421686746987953,
+    "lane_count_hist": {
+      "1": 37,
+      "2": 95,
+      "3": 28,
+      "4": 4,
+      "6": 2
+    }
+  }
+]

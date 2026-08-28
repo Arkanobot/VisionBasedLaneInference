@@ -1,0 +1,40 @@
+
+__pycache__/
+_extract/
+.DS_Store
+.venv/
+*.7z
+*.py[cod]
+*.zip
+# data (large, redistributed separately)
+# environments
+# os
+# trained weights and generated artefacts
+archives/
+datasets/
+dist/*.zip
+outputs/*.log
+outputs/*.mp4
+!outputs/demo_video/capstone_demo.mp4
+outputs/*.png
+outputs/api/
+outputs/checkpoints/
+outputs/phase4_report.html
+web/dist/
+web/node_modules/
+
+# assistant/editor state, never part of the project
+.claude/
+.vscode/
+.idea/
+
+# deployment bundle is assembled by deploy/make_bundle.sh, not committed
+deploy/build/
+
+# handover/ holds the generators; the built documents live in outputs/
+handover/*.pdf
+handover/*.pptx
+handover/*.docx
+
+# self-signed TLS material for serving the demo over the LAN; never committed
+lane_inference/certs/

@@ -1,0 +1,23 @@
+# Runtime only, pinned to the versions this project is verified against locally.
+# torch and torchvision come from the CPU wheel index in the Dockerfile: the
+# default wheel bundles CUDA and is roughly 4x larger for no benefit on a CPU
+# host.
+#
+# Deliberately excluded, and why:
+#   gradio       the interface is React now; nothing imports it
+#   matplotlib   only used by the offline figure generator
+#   scipy        not imported anywhere at runtime (verified by grep)
+#   prefetch_generator, yacs
+#                YOLOP dependencies. No served endpoint touches YOLOP -- it is
+#                used only for offline pseudo-labels and the evaluation harness
+#                -- so the container avoids a ~200 MB torch.hub download.
+#
+# headless replaces opencv-python at the same version: identical API, without
+# the GUI libraries a container has no display for.
+opencv-python-headless==5.0.0.93
+numpy==2.5.2
+pillow==12.3.0
+fastapi==0.141.1
+uvicorn[standard]==0.52.4
+python-multipart==0.0.32
+certifi==2026.7.22

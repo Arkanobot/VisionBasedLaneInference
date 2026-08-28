@@ -1,0 +1,72 @@
+{
+  "structured": {
+    "file": "case_structured.jpg",
+    "lanes": 2,
+    "width": 5.8,
+    "laneWidth": 2.9,
+    "ego": 1,
+    "conf": 0.84,
+    "road_type": "unstructured",
+    "source": "width-partition",
+    "users": 0,
+    "ms": 211.7,
+    "scene_ok": true,
+    "reason": null
+  },
+  "unstructured": {
+    "file": "case_unstructured.jpg",
+    "lanes": 1,
+    "width": 4.87,
+    "laneWidth": 4.87,
+    "ego": 1,
+    "conf": 0.92,
+    "road_type": "unstructured",
+    "source": "width-partition",
+    "users": 0,
+    "ms": 54.5,
+    "scene_ok": true,
+    "reason": null
+  },
+  "multilane": {
+    "file": "case_multilane.jpg",
+    "lanes": 1,
+    "width": 4.56,
+    "laneWidth": 4.56,
+    "ego": 1,
+    "conf": 0.8,
+    "road_type": "unstructured",
+    "source": "width-partition",
+    "users": 1,
+    "ms": 70.0,
+    "scene_ok": true,
+    "reason": null
+  },
+  "dense": {
+    "file": "case_dense.jpg",
+    "lanes": 1,
+    "width": 3.01,
+    "laneWidth": 3.01,
+    "ego": 1,
+    "conf": 0.76,
+    "road_type": "unstructured",
+    "source": "width-partition",
+    "users": 4,
+    "ms": 48.4,
+    "scene_ok": true,
+    "reason": null
+  },
+  "dashcam": {
+    "file": "case_dashcam.jpg",
+    "lanes": 3,
+    "width": 9.03,
+    "laneWidth": 3.01,
+    "ego": null,
+    "conf": 0.58,
+    "road_type": "unstructured",
+    "source": "width-partition",
+    "users": 2,
+    "ms": 79.0,
+    "scene_ok": true,
+    "reason": null
+  }
+}

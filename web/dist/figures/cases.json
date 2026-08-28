@@ -1,0 +1,80 @@
+{
+  "structured": {
+    "file": "/figures/case_structured.jpg",
+    "lanes": 2,
+    "width": 8.43,
+    "laneWidth": 4.22,
+    "ego": 1,
+    "conf": 0.93,
+    "roadType": "structured",
+    "source": "markings:learned",
+    "users": 2,
+    "ms": 194.0,
+    "frame": 53
+  },
+  "multilane": {
+    "file": "/figures/case_multilane.jpg",
+    "lanes": 3,
+    "width": 8.88,
+    "laneWidth": 2.96,
+    "ego": 2,
+    "conf": 0.92,
+    "roadType": "unstructured",
+    "source": "width-partition",
+    "users": 2,
+    "ms": 58.2,
+    "frame": 95
+  },
+  "rural": {
+    "file": "/figures/case_rural.jpg",
+    "lanes": 1,
+    "width": 4.87,
+    "laneWidth": 4.87,
+    "ego": 1,
+    "conf": 0.92,
+    "roadType": "unstructured",
+    "source": "width-partition",
+    "users": 0,
+    "ms": 50.6,
+    "frame": 64
+  },
+  "dense": {
+    "file": "/figures/case_dense.jpg",
+    "lanes": 2,
+    "width": 7.47,
+    "laneWidth": 3.74,
+    "ego": 2,
+    "conf": 0.67,
+    "roadType": "unstructured",
+    "source": "width-partition",
+    "users": 7,
+    "ms": 51.8,
+    "frame": 61
+  },
+  "declined": {
+    "file": "/figures/case_declined.jpg",
+    "lanes": null,
+    "width": null,
+    "laneWidth": null,
+    "ego": null,
+    "conf": null,
+    "roadType": null,
+    "source": null,
+    "users": 3,
+    "ms": 49.0,
+    "frame": 22
+  },
+  "dashcam": {
+    "file": "/figures/case_dashcam.jpg",
+    "lanes": 3,
+    "width": 9.03,
+    "laneWidth": 3.01,
+    "ego": null,
+    "conf": 0.58,
+    "roadType": "unstructured",
+    "source": "width-partition",
+    "users": 2,
+    "ms": 122.9,
+    "frame": null
+  }
+}

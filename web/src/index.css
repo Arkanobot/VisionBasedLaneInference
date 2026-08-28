@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ───────────────────────────────────────────────────────────────────────────
+   Two grounds, one component set.
+
+   The report is a document and the demo is an instrument, so they are not the
+   same surface. `.theme-paper` is a printed engineering plate: cool near-white,
+   hairline rules, ink text. `.theme-instrument` is a near-black panel, because
+   camera frames and segmentation overlays are unreadable on white.
+
+   Every component styles through these variables, so nothing is hard-coded to
+   one ground. Values are space-separated RGB triplets for Tailwind's
+   `<alpha-value>` support.
+   ────────────────────────────────────────────────────────────────────────── */
+@layer base {
+  .theme-paper {
+    --page:         246 247 248;
+    --surface:      255 255 255;
+    --sunken:       238 240 242;
+    --rule:         216 220 224;
+    --rule2:        188 194 200;
+    --strong:        14  18  22;
+    --body:          42  49  56;
+    --muted:         90  100 110;
+    --faint:        131 141 151;
+    --accent:       164 118   6;   /* road-marking amber, darkened to hold on paper */
+    --accent-quiet: 245 232 198;
+    color-scheme: light;
+  }
+  .theme-instrument {
+    --page:          11  13  15;
+    --surface:       18  21  26;
+    --sunken:        24  28  34;
+    --rule:          35  40  48;
+    --rule2:         56  63  73;
+    --strong:       238 241 245;
+    --body:         198 205 214;
+    --muted:        140 150 162;
+    --faint:        108 118 130;
+    --accent:       245 197  24;
+    --accent-quiet:  44  36  10;
+    color-scheme: dark;
+  }
+
+  /* Fallback ground. An element selector (0,0,1) so either theme class wins. */
+  html {
+    --page: 11 13 15;      --surface: 18 21 26;   --sunken: 24 28 34;
+    --rule: 35 40 48;      --rule2: 56 63 73;     --strong: 238 241 245;
+    --body: 198 205 214;   --muted: 140 150 162;  --faint: 108 118 130;
+    --accent: 245 197 24;  --accent-quiet: 44 36 10;
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-page text-body antialiased;
+    font-family: theme('fontFamily.sans');
+  }
+  ::selection { background: rgb(var(--accent) / .22); color: rgb(var(--strong)); }
+  input, select, textarea { font-size: 16px; }   /* stops iOS zooming on focus */
+  h1, h2, h3, h4 { font-feature-settings: "kern" 1, "liga" 1; color: rgb(var(--strong)); }
+  /* Numerals line up in every table and readout without per-site opt-in. */
+  .font-mono { font-variant-numeric: tabular-nums; }
+}
+
+@layer components {
+  /* ── type roles ──────────────────────────────────────────────────────── */
+  .prose-serif {
+    font-family: theme('fontFamily.serif');
+    font-optical-sizing: auto;
+  }
+  /* Swiss signage: condensed, set tight, never letterspaced when large. */
+  .display {
+    font-family: theme('fontFamily.cond');
+    font-weight: 600;
+    letter-spacing: -.02em;
+    line-height: .96;
+  }
+  /* Small caps-ish label used for eyebrows, axis titles, table heads. */
+  .label {
+    font-family: theme('fontFamily.cond');
+    @apply text-[11px] font-semibold uppercase tracking-[.15em] text-faint;
+  }
+
+  /* ── plate primitives ────────────────────────────────────────────────── */
+  .hair    { @apply border-rule; }
+  /* Square, hairlined panels -- no rounded glass. */
+  .card       { @apply border border-rule bg-surface; }
+  .card-hover { @apply transition-colors duration-200 hover:border-rule2 hover:bg-sunken; }
+  .plate   { @apply border border-rule bg-surface; }
+  .well    { @apply bg-sunken; }
+
+  /* A rule that carries a label, as on a drawing sheet. */
+  .rule-line { @apply h-px w-full bg-rule; }
+
+  /* ── controls ────────────────────────────────────────────────────────── */
+  .btn {
+    @apply inline-flex min-h-[44px] select-none items-center justify-center gap-2
+           px-4 py-2.5 text-[13px] font-medium transition-all duration-150
+           disabled:cursor-not-allowed disabled:opacity-40;
+    font-family: theme('fontFamily.sans');
+  }
+  .btn-primary {
+    @apply btn bg-strong text-page hover:opacity-90 active:translate-y-px;
+  }
+  .btn-ghost {
+    @apply btn border border-rule2 text-body hover:border-strong hover:text-strong;
+  }
+
+  .stat-value { @apply font-mono text-[26px] font-medium leading-none text-strong; }
+  .stat-label { @apply label; }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 border px-2 py-[3px] text-[11px] font-medium;
+    font-family: theme('fontFamily.mono');
+  }
+
+  .skeleton {
+    @apply animate-shimmer bg-gradient-to-r from-sunken via-rule to-sunken bg-[length:200%_100%];
+  }
+
+  /* Millimetre grid, as on drawing paper. Used behind diagrams only. */
+  .grid-bg {
+    background-image:
+      linear-gradient(rgb(var(--rule) / .55) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(var(--rule) / .55) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+
+  /* ── journal prose ───────────────────────────────────────────────────── */
+  .drop::first-letter {
+    float: left;
+    font-family: theme('fontFamily.serif');
+    font-size: 3.1em;
+    line-height: .84;
+    padding: .05em .09em 0 0;
+    font-weight: 400;
+    color: rgb(var(--strong));
+  }
+}
+
+/* Scrollbars follow the active ground rather than the OS default. */
+::-webkit-scrollbar { width: 11px; height: 11px; }
+::-webkit-scrollbar-track { background: rgb(var(--page)); }
+::-webkit-scrollbar-thumb { background: rgb(var(--rule2)); }
+::-webkit-scrollbar-thumb:hover { background: rgb(var(--muted)); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    transition-duration: .01ms !important;
+  }
+  html { scroll-behavior: auto; }
+}
+
+@media print {
+  .no-print { display: none !important; }
+  .theme-paper { --page: 255 255 255; }
+}

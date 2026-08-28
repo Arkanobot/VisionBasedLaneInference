@@ -1,0 +1,18 @@
+{
+  "epochs": 40,
+  "batch_size": 16,
+  "lr": 0.0005,
+  "weight_decay": 0.0001,
+  "arch": "mobilenetv3_unet",
+  "seed": 1337,
+  "num_workers": 4,
+  "no_pretrained": false,
+  "no_class_weights": false,
+  "run_name": "seg_idd20k",
+  "lane_head": true,
+  "lane_weight": 0.5,
+  "resume": true,
+  "checkpoint_dir": null,
+  "input_size": "288x512",
+  "data_root": "../datasets/idd_work"
+}

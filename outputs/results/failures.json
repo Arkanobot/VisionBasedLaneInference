@@ -1,0 +1,374 @@
+{
+  "summary": {
+    "frames": 204,
+    "solved": 159,
+    "unsolved": 39,
+    "causes": {
+      "carriageway too narrow": 20,
+      "road edges not visible": 11,
+      "no vanishing point": 8
+    },
+    "error_median": 0.42477844804370246,
+    "error_p90": 0.9592075422594524,
+    "worst_quintile": {
+      "error": 1.199166661900917,
+      "confidence": 0.6820750495254672,
+      "vehicle_frac": 0.09222857751882906,
+      "road_frac": 0.3283141786272558
+    },
+    "best_quintile": {
+      "error": 0.18108025212206877,
+      "confidence": 0.7917469301392631,
+      "vehicle_frac": 0.10670784780446212,
+      "road_frac": 0.3106579508313201
+    },
+    "unsolved_vehicle_frac": 0.10242431943973794,
+    "solved_vehicle_frac": 0.08183581303853933
+  },
+  "worst": [
+    {
+      "idx": 197,
+      "error": 4.969587169638766,
+      "confidence": 0.7240016190681623,
+      "lanes": 1,
+      "width": 2.608150470219436,
+      "vehicle_frac": 0.015459801762114537,
+      "road_frac": 0.2789647577092511
+    },
+    {
+      "idx": 119,
+      "error": 2.010295594353891,
+      "confidence": 0.6876600798602582,
+      "lanes": 2,
+      "width": 8.021906550382926,
+      "vehicle_frac": 0.04803138766519824,
+      "road_frac": 0.3269273127753304
+    },
+    {
+      "idx": 44,
+      "error": 1.8869023178760107,
+      "confidence": 0.301118355279193,
+      "lanes": 1,
+      "width": 3.761755485893417,
+      "vehicle_frac": 0.09942180616740089,
+      "road_frac": 0.31811674008810575
+    },
+    {
+      "idx": 76,
+      "error": 1.862944566246946,
+      "confidence": 0.7876763899023673,
+      "lanes": 2,
+      "width": 6.012713714149447,
+      "vehicle_frac": 0.0,
+      "road_frac": 0.22961178414096917
+    },
+    {
+      "idx": 7,
+      "error": 1.85918961911272,
+      "confidence": 0.7337532972818805,
+      "lanes": 3,
+      "width": 8.956735031982358,
+      "vehicle_frac": 0.019631057268722468,
+      "road_frac": 0.3211729074889868
+    },
+    {
+      "idx": 11,
+      "error": 1.305161430636938,
+      "confidence": 0.6577172381838015,
+      "lanes": 2,
+      "width": 5.061062456593418,
+      "vehicle_frac": 0.20835627753303965,
+      "road_frac": 0.2698237885462555
+    },
+    {
+      "idx": 203,
+      "error": 1.2904770560275751,
+      "confidence": 0.8121003060316236,
+      "lanes": 2,
+      "width": 7.80971536853886,
+      "vehicle_frac": 0.10333149779735683,
+      "road_frac": 0.43420980176211454
+    },
+    {
+      "idx": 163,
+      "error": 1.2178756693809476,
+      "confidence": 0.6985065540280474,
+      "lanes": 2,
+      "width": 8.065439213751347,
+      "vehicle_frac": 0.02851046255506608,
+      "road_frac": 0.3307819383259912
+    },
+    {
+      "idx": 167,
+      "error": 1.0818705398458017,
+      "confidence": 0.7402231381241796,
+      "lanes": 1,
+      "width": 3.078646986302204,
+      "vehicle_frac": 0.37425660792951543,
+      "road_frac": 0.197329295154185
+    },
+    {
+      "idx": 58,
+      "error": 1.047483929604093,
+      "confidence": 0.5723561077955616,
+      "lanes": 2,
+      "width": 5.9437686997024795,
+      "vehicle_frac": 0.0073237885462555065,
+      "road_frac": 0.3908314977973568
+    },
+    {
+      "idx": 152,
+      "error": 1.0383040495711802,
+      "confidence": 0.6328075386793147,
+      "lanes": 2,
+      "width": 5.269798031844253,
+      "vehicle_frac": 0.08175936123348018,
+      "road_frac": 0.37373348017621144
+    },
+    {
+      "idx": 100,
+      "error": 1.034764452967393,
+      "confidence": 0.7571897544838044,
+      "lanes": 2,
+      "width": 8.504576286818024,
+      "vehicle_frac": 0.007365088105726872,
+      "road_frac": 0.3068281938325991
+    }
+  ],
+  "unsolved": [
+    {
+      "idx": 3,
+      "cause": "no vanishing point",
+      "vehicle_frac": 0.16675385462555067,
+      "road_frac": 0.1921806167400881
+    },
+    {
+      "idx": 13,
+      "cause": "carriageway too narrow",
+      "vehicle_frac": 0.1655011013215859,
+      "road_frac": 0.24686123348017622
+    },
+    {
+      "idx": 17,
+      "cause": "road edges not visible",
+      "vehicle_frac": 0.0075715859030837,
+      "road_frac": 0.47497246696035245
+    },
+    {
+      "idx": 18,
+      "cause": "road edges not visible",
+      "vehicle_frac": 0.0027670704845814977,
+      "road_frac": 0.46797907488986784
+    },
+    {
+      "idx": 19,
+      "cause": "road edges not visible",
+      "vehicle_frac": 0.0044190528634361235,
+      "road_frac": 0.4663546255506608
+    },
+    {
+      "idx": 20,
+      "cause": "road edges not visible",
+      "vehicle_frac": 0.013325991189427313,
+      "road_frac": 0.4758810572687225
+    },
+    {
+      "idx": 22,
+      "cause": "no vanishing point",
+      "vehicle_frac": 0.29369493392070484,
+      "road_frac": 0.21305066079295154
+    },
+    {
+      "idx": 25,
+      "cause": "carriageway too narrow",
+      "vehicle_frac": 0.13740363436123348,
+      "road_frac": 0.24021200440528634
+    },
+    {
+      "idx": 37,
+      "cause": "road edges not visible",
+      "vehicle_frac": 0.2863023127753304,
+      "road_frac": 0.16028359030837006
+    },
+    {
+      "idx": 39,
+      "cause": "carriageway too narrow",
+      "vehicle_frac": 0.09756332599118943,
+      "road_frac": 0.22482103524229075
+    },
+    {
+      "idx": 40,
+      "cause": "carriageway too narrow",
+      "vehicle_frac": 0.1680479074889868,
+      "road_frac": 0.319465859030837
+    },
+    {
+      "idx": 49,
+      "cause": "no vanishing point",
+      "vehicle_frac": 0.018405837004405286,
+      "road_frac": 0.3409829295154185
+    },
+    {
+      "idx": 51,
+      "cause": "carriageway too narrow",
+      "vehicle_frac": 0.06170154185022026,
+      "road_frac": 0.2491464757709251
+    },
+    {
+      "idx": 69,
+      "cause": "no vanishing point",
+      "vehicle_frac": 0.04659966960352423,
+      "road_frac": 0.35234030837004404
+    },
+    {
+      "idx": 72,
+      "cause": "road edges not visible",
+      "vehicle_frac": 0.05860407488986784,
+      "road_frac": 0.17972191629955947
+    },
+    {
+      "idx": 73,
+      "cause": "road edges not visible",
+      "vehicle_frac": 0.18800936123348017,
+      "road_frac": 0.19935297356828194
+    },
+    {
+      "idx": 74,
+      "cause": "carriageway too narrow",
+      "vehicle_frac": 0.06280286343612335,
+      "road_frac": 0.37900605726872244
+    },
+    {
+      "idx": 82,
+      "cause": "carriageway too narrow",
+      "vehicle_frac": 0.014441079295154185,
+      "road_frac": 0.3450578193832599
+    },
+    {
+      "idx": 88,
+      "cause": "carriageway too narrow",
+      "vehicle_frac": 0.02519273127753304,
+      "road_frac": 0.33597191629955947
+    },
+    {
+      "idx": 93,
+      "cause": "carriageway too narrow",
+      "vehicle_frac": 0.17575715859030838,
+      "road_frac": 0.3353248898678414
+    },
+    {
+      "idx": 103,
+      "cause": "carriageway too narrow",
+      "vehicle_frac": 0.11683645374449339,
+      "road_frac": 0.2898265418502203
+    },
+    {
+      "idx": 105,
+      "cause": "carriageway too narrow",
+      "vehicle_frac": 0.0838931718061674,
+      "road_frac": 0.2513078193832599
+    },
+    {
+      "idx": 107,
+      "cause": "carriageway too narrow",
+      "vehicle_frac": 0.018639867841409693,
+      "road_frac": 0.33120870044052864
+    },
+    {
+      "idx": 112,
+      "cause": "no vanishing point",
+      "vehicle_frac": 0.08398953744493393,
+      "road_frac": 0.3164372246696035
+    },
+    {
+      "idx": 113,
+      "cause": "carriageway too narrow",
+      "vehicle_frac": 0.13949614537444935,
+      "road_frac": 0.27723017621145374
+    },
+    {
+      "idx": 118,
+      "cause": "carriageway too narrow",
+      "vehicle_frac": 0.13290198237885462,
+      "road_frac": 0.2514179515418502
+    },
+    {
+      "idx": 120,
+      "cause": "road edges not visible",
+      "vehicle_frac": 0.0075715859030837,
+      "road_frac": 0.34153359030837005
+    },
+    {
+      "idx": 133,
+      "cause": "carriageway too narrow",
+      "vehicle_frac": 0.12471090308370045,
+      "road_frac": 0.3907351321585903
+    },
+    {
+      "idx": 135,
+      "cause": "carriageway too narrow",
+      "vehicle_frac": 0.08729350220264318,
+      "road_frac": 0.41000825991189427
+    },
+    {
+      "idx": 144,
+      "cause": "carriageway too narrow",
+      "vehicle_frac": 0.031965859030837006,
+      "road_frac": 0.21990638766519824
+    },
+    {
+      "idx": 146,
+      "cause": "no vanishing point",
+      "vehicle_frac": 0.102409140969163,
+      "road_frac": 0.24593887665198239
+    },
+    {
+      "idx": 150,
+      "cause": "no vanishing point",
+      "vehicle_frac": 0.19558094713656388,
+      "road_frac": 0.3412582599118943
+    },
+    {
+      "idx": 176,
+      "cause": "road edges not visible",
+      "vehicle_frac": 0.002546806167400881,
+      "road_frac": 0.4118116740088106
+    },
+    {
+      "idx": 180,
+      "cause": "no vanishing point",
+      "vehicle_frac": 0.07979074889867842,
+      "road_frac": 0.3596640969162996
+    },
+    {
+      "idx": 181,
+      "cause": "carriageway too narrow",
+      "vehicle_frac": 0.09251101321585903,
+      "road_frac": 0.19724669603524228
+    },
+    {
+      "idx": 184,
+      "cause": "road edges not visible",
+      "vehicle_frac": 0.058122246696035246,
+      "road_frac": 0.32659691629955945
+    },
+    {
+      "idx": 189,
+      "cause": "carriageway too narrow",
+      "vehicle_frac": 0.20626376651982378,
+      "road_frac": 0.13085077092511013
+    },
+    {
+      "idx": 191,
+      "cause": "road edges not visible",
+      "vehicle_frac": 0.25470814977973566,
+      "road_frac": 0.12155837004405286
+    },
+    {
+      "idx": 195,
+      "cause": "carriageway too narrow",
+      "vehicle_frac": 0.18045154185022028,
+      "road_frac": 0.3499036343612335
+    }
+  ]
+}
